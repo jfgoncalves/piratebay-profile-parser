@@ -1,6 +1,6 @@
 ### Installation
 
-[Download](https://github.com/jfgoncalves/piratebay-profile-parser/archive/develop.zip) and extract zipball.
+[Download](https://github.com/jfgoncalves/piratebay-profile-parser/archive/master.zip) and extract zipball.
 
 Install the dependencies:
 
