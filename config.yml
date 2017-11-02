@@ -1,0 +1,11 @@
+# The Pirate Bay Config
+baseURL: 'https://yourpiratebayinstance.com'
+tpbUser: 'PirateBayUser'
+# https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+tz: 'Europe/Paris'
+# https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes
+UA: 'YourUserAgent'
+# RSS output config
+rssTitle: 'TPB to RSS'
+rssDesc: 'Take given TPB profile and turn it into an RSS feed'
+outputDest: 'rss.xml' #Same folder as .py

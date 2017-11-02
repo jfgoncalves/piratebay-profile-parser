@@ -1,0 +1,14 @@
+##############################################################
+#
+#             Python package requirements
+# https://github.com/jfgoncalves/piratebay-profile-parser
+#
+#     pip3 install -r requirements.txt
+#
+##############################################################
+
+requests
+dateparser
+feedgen
+beautifulsoup4
+PyYAML
