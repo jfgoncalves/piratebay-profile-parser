@@ -53,7 +53,7 @@ def createRSS(data, title, desc, o):
     rss = FeedGenerator()
     rss.title(title)
     rss.description(desc)
-    rss.link(href='https://github.com/jfgoncalves/piratebay-profile-parser', rel='self')
+    rss.link(href='https://github.com/jfgoncalves/piratebay-profile-parser', rel='alternate')
     rss.language('en')
 
 # 0 title, 1 guid, 2 author, 3 pubdate, 4 size, 5 magnet, 6 seeders, 7 leechers
