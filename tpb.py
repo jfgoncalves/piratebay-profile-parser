@@ -62,7 +62,7 @@ def createRSS(data, title, desc, o):
         entry.title(item[0])
         entry.author(name=item[2])
         entry.id(item[5])
-        entry.guid(item[1])
+        entry.guid(guid=item[1], permalink=True)
         entry.pubdate(item[3])
         entry.link(href=item[5])
         entry.description('Size: '+item[4]+', '+item[6]+' seeders and '+item[7]+' leechers.')
