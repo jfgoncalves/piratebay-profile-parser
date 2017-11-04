@@ -8,4 +8,6 @@ UA: 'YourUserAgent'
 # RSS output config
 rssTitle: 'TPB to RSS'
 rssDesc: 'Take given TPB profile and turn it into an RSS feed'
+# Where the feed is hosted
+rssLink: 'http://localhost'
 outputDest: 'rss.xml' #Same folder as .py

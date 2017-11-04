@@ -49,11 +49,11 @@ def getData(baseURL,tpbUser, UA, tz):
 
     return infoList
 
-def createRSS(data, title, desc, o):
+def createRSS(data, title, desc, link, o):
     rss = FeedGenerator()
     rss.title(title)
     rss.description(desc)
-    rss.link(href='https://github.com/jfgoncalves/piratebay-profile-parser', rel='alternate')
+    rss.link(href=link, rel='self', type='application/rss+xml')
     rss.language('en')
 
 # 0 title, 1 guid, 2 author, 3 pubdate, 4 size, 5 magnet, 6 seeders, 7 leechers
@@ -75,4 +75,4 @@ if __name__ == "__main__":
         cfg = yaml.load(ymlfile)
 
     data = getData(cfg['baseURL'], cfg['tpbUser'], cfg['UA'], cfg['tz'])
-    createRSS(data, cfg['rssTitle'], cfg['rssDesc'], cfg['outputDest'])
+    createRSS(data, cfg['rssTitle'], cfg['rssDesc'], cfg['rssLink'], cfg['outputDest'])
