@@ -11,7 +11,7 @@ def parsePubDate(date, tz):
     if 'Y-day' in date:
         date = date.replace('Y-day', 'Yesterday')
 
-    return dateparser.parse(date, settings={'TIMEZONE': 'GMT', 'TO_TIMEZONE': tz, 'RETURN_AS_TIMEZONE_AWARE': True})
+    return dateparser.parse(date, settings={'TIMEZONE': 'Europe/Stockholm', 'TO_TIMEZONE': tz, 'RETURN_AS_TIMEZONE_AWARE': True})
 
 def getData(baseURL,tpbUser, UA, tz):
     # Ensuring latest items on top
